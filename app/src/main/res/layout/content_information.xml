@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.melnykanton.android_prctc.Information"
+    tools:showIn="@layout/activity_information">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="ABOUT PAGE"
+        android:textAlignment="center"
+        android:textSize="30dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/testimage" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text='Уверен, каждый программист слышал словосочетание "паттерны проектирования" (или шаблоны). Если очень коротко - это описание проблем, которые встречаются при написании объектно-ориентированного кода, а так же примеры решения этих проблем. Спустя какое-то время паттерны начинают преследовать нас везде - на форумах, в статьях и даже в требованиях к вакансиям. Некоторые люди заболевают паттернофилией, начинают впиндюривать эти шаблоны направо и налево, видят их во снах, бредят ими... Одним словом - ужас. Но, как сказал кто-то умный, - паттерны нужны для того, чтобы помочь реализовать какую-то идею, а не для того, чтобы уместить идею в рамки некоторого паттерна. Надеюсь, цикл моих статей поможет вам сохранить хладнокровие в вопросах использования паттернов и при этом расширить свои познания в ООП. За основу возьмем каталог паттернов из книги GoF - Design Patterns. А дальше как пойдет :). В каждой статье я попытаюсь: объяснить, зачем конкретный паттерн нужен; привести пример его использования, по возможности из реальных Java проектов, в которых я принимал участие; рассказать об особенностях, мифах и подводных камнях; указать, где можно встретить реализацию паттерна в JDK.' />
+    </ScrollView>
+
+</RelativeLayout>
